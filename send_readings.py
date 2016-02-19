@@ -1,8 +1,6 @@
 import requests
 import time
-import datetime
 import os
-import calendar
 
 from sense_hat import SenseHat
 
@@ -24,5 +22,6 @@ while True:
 	response = requests.post(url, data=readings, allow_redirects=True)
 	print(response.content, readings)
 
-	time.sleep(1)
+	time.sleep(300)
+
 
